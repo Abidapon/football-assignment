@@ -1,0 +1,247 @@
+/* ----------
+Google Fonts 
+-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+/* -------------
+Starting Heading 
+-----------------*/
+header{
+    width: 100%;
+    height: 677px;
+    background: #030211;
+    display: flex;
+    padding: 15px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.banner-text{
+    color: #FFFFFF;
+    width: 485px;
+    font-size: 64px;
+    margin-right: 102px;
+    
+}
+.banner{
+    transition: 1s;
+}
+.banner img{
+    width: 556.01px;
+}
+.banner:hover{
+  transform: scale(1.3);
+}
+.button{
+    color: #FFFFFF;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #080808;
+    border: 1px solid white;
+    width: 168px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4;
+}
+.fas{
+    margin-left: 8px;
+    width: 24px;
+    height: 24px;
+}
+/*---------------
+ Main-> section-1:Grid 
+ ---------------*/
+
+.grid-container{
+     display: grid;
+     margin: auto;
+     margin-top: 70px;
+     grid-gap: 30px;
+     width: 1054px;
+     grid-template-columns: repeat(3, 1fr);
+ }
+ .player img{
+    width: 300px;
+    height: 256px;
+ }
+ .player{
+     color: white;
+     padding: 15px;
+     border:15px #FFFFFF;
+     background-color: black;
+     box-shadow: #2609a3 0px 0px 15px;
+ }
+ 
+ p{
+     color: #fdfbfb;
+ }
+ hr{
+     margin-top: 100px;
+     margin-bottom: 50px;
+     width: 800px;
+ }
+
+/*---------------
+ Main  Section:2  
+ ----------------*/
+ h2{
+     text-align: center;
+ }
+ .performence-title{
+     text-align: center;
+     margin-top: 50px;
+     font-size: 2.0em;
+ }
+ .performers{
+     width: 1054px;
+     margin:auto;
+     margin-bottom: 50px;
+     background-color: black;
+     
+ }
+ .best-performers{
+     display: flex;
+     padding: 10px;
+     box-shadow: rgb(248, 242, 242) 0px 1px 30px;
+     margin-bottom: 20px;
+     text-align: center;
+     
+ }
+ .performers img{
+     margin-right: 5px;
+     width: 100px;
+ }
+ .player-name{
+     margin-right:10px;
+     color: white;
+ }
+ /* ---------------
+ Register Section
+ ------------------- */
+.contact-info{
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.contact-info img{
+width: 250px;
+align-items: center;
+justify-content: center;
+ }
+ .email{
+     color: rgb(0, 0, 0);
+     font-size: 20px;
+     width: 300px;
+     background-color: rgb(255, 255, 255);
+     border-radius: 3px;
+ }
+ .submit{
+     color: rgb(255, 255, 255);
+     padding: 3px;
+     background-color: rgb(2, 0, 12);
+     font-size: 18px;
+     border-radius: 2px;
+     cursor: pointer;
+ }
+ /*-----------------
+  Footer Section 
+  -----------------*/
+  .footer-container{
+    width: 483px;
+    height: 213px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .footer-image img{
+  width: 483px;
+  margin-bottom: 20px;
+  }
+  .social{
+      display: flex;
+      list-style: none;
+      width: 170px;
+      height: 32px;
+      margin: auto;
+      text-align: center;
+  }
+.social-btn{
+    background-color: rgb(216, 216, 216);
+    border-radius: 50%;
+    height: 32px;
+    width: 32px; 
+    text-align: center;
+    margin-right: 14px;
+    
+}
+.fab{
+    margin-top: 10px;
+    color: rgb(97, 99, 97);
+}
+.copyright-text{
+    text-align: center;
+    margin-top: 0px;
+}
+/* ------------
+Media Queries 
+---------------*/
+@media screen and (max-width:688px) {
+    header{
+        position: absolute;
+        width: 360px;
+        height: 695px;
+        left: 0px;
+        top: 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-text{
+        margin-left: 150px;
+        margin-top: 50px;
+        margin-right: 100px;
+        height: 350px;
+        width: 250px;
+        text-align: center;
+    }
+    .banner img{
+        display: hidden;
+        
+    }
+    .banner img .banner-text{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .grid-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner{
+        height: 200px;
+        width: auto;
+    }
+    .footer-image{
+        display: none;
+    }
+      
+}
